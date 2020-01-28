@@ -1,0 +1,19 @@
+
+    <table border="2px" *ngIf = "employees.length >0">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>NAME</th>
+          <th>SALARY</th>
+          <th>DEPARTMENT</th>
+          <th>ACTION</th>
+        </tr>
+        </thead>
+        <tr *ngFor="let employee of employees">
+          <td>{{ employee.ID }}</td>
+          <td>{{ employee.NAME }}</td>
+          <td>{{ employee.SALARY }}</td>
+          <td>{{ employee.DEPARTMENT }}</td>
+          <td><button>Update</button> | <button>Delete</button>
+        </tr>
+    </table>
